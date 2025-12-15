@@ -37,6 +37,16 @@ powershell -ExecutionPolicy Bypass -File scripts\generate_allure_report.ps1
 
 Після цього можна відкрити `allure-report/index.html` (або виконати `allure open allure-report`, якщо CLI доступний у PATH).
 
+## Скріншоти при падінні
+При падінні тесту скріншот зберігається у папці `screenshots/` і прикріплюється до Allure.
+
+Щоб спеціально згенерувати скріншот (демо), є тест з маркером `demo_fail`.
+Він **не запускається за замовчуванням**.
+
+```bat
+pytest -m demo_fail --alluredir=allure-results
+```
+
 ## Запуск через Selenium Grid
 Інструкція: [scripts/README_GRID.md](scripts/README_GRID.md)
 
