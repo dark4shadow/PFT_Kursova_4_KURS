@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+allure-results/
+allure-report/
+screenshots/
+.pytest_cache/
+tools/allure/
+logs/
+selenium-server-*.jar
+.vscode/
